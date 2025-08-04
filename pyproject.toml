@@ -23,7 +23,7 @@ dependencies = [
 ]
 
 [project.scripts]
-water-affairs = "backend.main:main"
+python-server-init = "backend.main:main"
 
 [tool.uv]
 package = true

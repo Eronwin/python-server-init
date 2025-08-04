@@ -46,10 +46,10 @@ RUN set -eux; \
     rm -rf /var/lib/apt/lists/*
 
 # Install the built wheel and cleanup pip cache
-COPY --from=builder /build/dist/water_affairs-*.whl /tmp/
+COPY --from=builder /build/dist/python_server_init-*.whl /tmp/
 RUN set -eux; \
-    pip install --no-cache-dir /tmp/water_affairs-*.whl; \
-    rm -f /tmp/water_affairs-*.whl; \
+    pip install --no-cache-dir /tmp/python_server_init-*.whl; \
+    rm -f /tmp/python_server_init-*.whl; \
     (pip cache purge || true); \
     rm -rf /root/.cache/pip || true
 

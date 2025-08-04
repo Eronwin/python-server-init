@@ -77,7 +77,7 @@ class Config(BaseSettings):
 
     @staticmethod
     def get_data_dir():
-        app_name = "water-affairs"
+        app_name = "python-server-init"
         if os.name == "nt":
             data_dir = os.path.join(os.environ["APPDATA"], app_name)
         elif os.name == "posix":
